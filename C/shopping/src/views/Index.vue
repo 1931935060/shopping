@@ -1,13 +1,17 @@
 <template>
     <div>
-        <h1>导航</h1>
+        <m-header></m-header>
+        <!-- 子路由的出口-->
         <router-view></router-view>
     </div>
 </template>
 
 <script>
+    import MHeader from '@/common/MHeader';
     export default {
-        
+        components: {
+            MHeader,
+        },
     }
 </script>
 
